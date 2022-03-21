@@ -13,9 +13,10 @@ Tested With:
 ## Example Output
 Example output produced using included files with command:
 ```
-python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg --dont_colorize
+python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg
 ```
 ![Example Output](https://github.com/nkolkin13/NeuralNeighborStyleTransfer/blob/main/example2.png?raw=true)
+
 To produce an output without color correction use the command
 ```
 python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg --dont_colorize
