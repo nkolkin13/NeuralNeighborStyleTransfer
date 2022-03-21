@@ -65,7 +65,7 @@ python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_T
 Optional Flags can be combined.
 
 ## Experimental Content Loss
-Because by default our method doesn't use a content loss it can sometimes destroy important details, especially if alpha is below 0.5. I'm currently working on a minimally invasive content loss based on the self-similarity matrix of the downsampled content image. So far it seems to reliably ensure the content is preserved, but has two main flaws. 
+Because by default our method doesn't use a content loss it sometimes destroys important content details, especially if alpha is below 0.5. I'm currently working on a minimally invasive content loss based on the self-similarity matrix of the downsampled content image. So far it seems to reliably ensure the content is preserved, but has two main flaws. 
 
 The first is that it causes periodic artifacts (isolated bright or dark pixels at regular intervals), which is caused by using bilinear downsampling. I'm working on a modified downsampler that randomizes the blur kernel which should fix this, and I'll update this repo when it's ready.
 
