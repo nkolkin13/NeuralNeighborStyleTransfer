@@ -77,8 +77,3 @@ The most important thing about choosing input style and content images is ensuri
 Generally I've found that style images which work well for one image, tend to work well for many images, I've included some examples of such images in ./inputs/style/ . If a style image consists of large visual elements (for example large shapes in a cubist painting), our method is less likely to capture it. Sometimes setting Alpha to be near 1.0 will work, but this isn't guaranteed.
 
 The content images that work the best are ones with a single large object. The smaller or lower contrast an aspect of the content image is, the more likely it will be lost in the final output. I've included some examples of content images that work well in ./inputs/content/
-
-## Future TODOS
-* Add option to make deterministic
-* Add unit tests
-* Dynamically adjust batched distance computation based on available memory
