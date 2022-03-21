@@ -13,9 +13,14 @@ Tested With:
 ## Example Output
 Example output produced using included files with command:
 ```
-python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg
+python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg --dont_colorize
 ```
-![Example Output](https://github.com/nkolkin13/NNST/blob/main/example.png?raw=true)
+![Example Output](https://github.com/nkolkin13/NeuralNeighborStyleTransfer/blob/main/example2.png?raw=true)
+To produce an output without color correction use the command
+```
+python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg --dont_colorize
+```
+![Example Output w/o Colorization](https://github.com/nkolkin13/NeuralNeighborStyleTransfer/blob/main/example.png?raw=true)
 
 ## Hardware Requirements
 Primarily tested in gpu mode with nvidia gpus using cuda, cpu mode implemented but not tested extensively (and is very slow).  
