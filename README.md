@@ -49,7 +49,7 @@ python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_T
 
 (Optional Flag) Augment style image with rotations. Slows down algorithm and increases memory requirement. Generally improves content preservation but hurts stylization slightly:  
 ```
-python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --no_flip
+python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --do_flip
 ```
 
 (Optional Flag) Cpu Mode, this takes tens of minutes even for a 512x512 output:  
