@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # NNST
-Private Repo for the algorithm NNST, described in the preprint "Neural Neighbor Style Transfer", please feel free to email any questions to kolkin@adobe.com
+Repo for the algorithm NNST-Opt, described in the preprint "Neural Neighbor Style Transfer", please feel free to email any questions to kolkin@adobe.com
 Paper Link: https://ttic.uchicago.edu/~nickkolkin/Paper/NNST_Preprint.pdf
 
 ## Dependencies
