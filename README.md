@@ -31,7 +31,7 @@ python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_T
 ```
 (Optional Flag) Producing 1024x1024 Output. 
 
-N.B: to get the most out of this setting use styles that are at least 1024 pixels on the long side, the included styles too small (512 pixels on the long side):    
+N.B: to get the most out of this setting use styles that are at least 1024 pixels on the long side, the included styles are too small (512 pixels on the long side):    
 ```
 python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --high_res
 ```
