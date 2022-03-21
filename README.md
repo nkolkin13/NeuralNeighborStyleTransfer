@@ -27,9 +27,6 @@ python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs
 Primarily tested in gpu mode with nvidia gpus using cuda, cpu mode implemented but not tested extensively (and is very slow).  
 Generating 512x512 outputs requires ~6GB of memory, generating 1024x1024 outputs requires ~12GB of memory.    
 
-Memory requirements can be reduced by reducing 'stride' (e.g. dividing by 2) defined in line 35 of utils/stylize.py. A future TODO
-is to automatically detect and adjust this based on gpu capacity.
-
 ## Usage
 Default Settings (512x512 Output):    
 ```
