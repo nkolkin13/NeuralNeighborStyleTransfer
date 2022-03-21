@@ -13,6 +13,7 @@ from utils.distance import pairwise_distances_l2, pairwise_distances_cos_center
 from utils.featureExtract import extract_feats, get_feat_norms
 from utils import misc
 from utils.misc import to_device, flatten_grid, scl_spatial
+from utils.colorization import color_match
 
 def produce_stylization(content_im, style_im, phi,
                         max_iter=350,
@@ -21,7 +22,8 @@ def produce_stylization(content_im, style_im, phi,
                         max_scls=0,
                         flip_aug=False,
                         content_loss=False,
-                        zero_init=False):
+                        zero_init=False,
+                        dont_colorize=False):
     """ Produce stylization of 'content_im' in the style of 'style_im'
         Inputs:
             content_im -- 1x3xHxW pytorch tensor containing rbg content image
@@ -124,7 +126,10 @@ def produce_stylization(content_im, style_im, phi,
     with torch.no_grad():
         output_im = syn_pyr(s_pyr)
 
-    return output_im
+    if dont_colorize:
+        return output_im
+    else:
+        return color_match(content_im, style_im, output_im)
 
 def replace_features(src, ref):
     """ Replace each feature vector in 'src' with the nearest (under centered 

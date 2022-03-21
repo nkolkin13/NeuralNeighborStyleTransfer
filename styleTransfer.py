@@ -28,6 +28,7 @@ parser.add_argument('--high_res'       , action='store_true'                  )
 parser.add_argument('--cpu'            , action='store_true'                  )
 parser.add_argument('--no_flip'        , action='store_true'                  )
 parser.add_argument('--content_loss'   , action='store_true'                  )
+parser.add_argument('--dont_colorize'  , action='store_true'                  )
 parser.add_argument('--alpha'          , type=float, default=0.75             )
 args = parser.parse_args()
 
@@ -67,7 +68,8 @@ output = produce_stylization(content_im_orig, style_im_orig, phi,
                             content_weight=content_weight,
                             max_scls=max_scls,
                             flip_aug=flip_aug,
-                            content_loss=content_loss)
+                            content_loss=content_loss,
+                            dont_colorize=args.dont_colorize)
 torch.cuda.synchronize()
 print('Done! total time: {}'.format(time.time() - start_time))
 
