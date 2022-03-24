@@ -11,7 +11,7 @@ Tested With:
 * Numpy 1.18.1          
 
 ## Example Output
-Example output produced using included files with command:
+Example output produced using included files with the command:
 ```
 python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs/style/S4.jpg --output_path ./output.jpg
 ```
