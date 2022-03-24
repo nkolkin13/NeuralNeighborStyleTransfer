@@ -23,6 +23,9 @@ python styleTransfer.py --content_path inputs/content/C1.png --style_path inputs
 ```
 ![Example Output w/o Colorization](https://github.com/nkolkin13/NeuralNeighborStyleTransfer/blob/main/example.png?raw=true)
 
+## Examples of using NNST to generate keyframes for video stylization
+https://home.ttic.edu/~nickkolkin/nnst_video_supp.mp4
+
 ## Hardware Requirements
 Primarily tested in gpu mode with nvidia gpus using cuda, cpu mode implemented but not tested extensively (and is very slow).  
 Generating 512x512 outputs requires ~6GB of memory, generating 1024x1024 outputs requires ~12GB of memory.    
