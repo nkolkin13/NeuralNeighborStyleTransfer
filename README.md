@@ -4,7 +4,7 @@ Repo for the algorithm NNST-Opt, described in the preprint "Neural Neighbor Styl
 Paper Link: https://ttic.uchicago.edu/~nickkolkin/Paper/NNST_Preprint.pdf
 
 ## Web Demo
-Try the Replicate web demo here [![Replicate](https://replicate.com/nkolkin13/neuralneighborstyletransfer/badge)](https://replicate.com/nkolkin13/neuralneighborstyletransfer) 
+Try Replicate web demo here [![Replicate](https://replicate.com/nkolkin13/neuralneighborstyletransfer/badge)](https://replicate.com/nkolkin13/neuralneighborstyletransfer) 
 
 ## Dependencies
 Tested With:        
