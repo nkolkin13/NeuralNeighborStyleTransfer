@@ -3,6 +3,9 @@
 Repo for the algorithm NNST-Opt, described in the preprint "Neural Neighbor Style Transfer", please feel free to email any questions to kolkin@adobe.com
 Paper Link: https://ttic.uchicago.edu/~nickkolkin/Paper/NNST_Preprint.pdf
 
+## Web Demo
+Try the Replicate web demo here [![Replicate](https://replicate.com/nkolkin13/neuralneighborstyletransfer/badge)](https://replicate.com/nkolkin13/neuralneighborstyletransfer) 
+
 ## Dependencies
 Tested With:        
 * Python 3.7.7        
