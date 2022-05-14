@@ -6,6 +6,10 @@ Paper Link: https://ttic.uchicago.edu/~nickkolkin/Paper/NNST_Preprint.pdf
 ## Web Demo
 Try Replicate web demo here [![Replicate](https://replicate.com/nkolkin13/neuralneighborstyletransfer/badge)](https://replicate.com/nkolkin13/neuralneighborstyletransfer) 
 
+Or try the Google Colab demos 
+- single image: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MSFTserver/AI-Colab-Notebooks/blob/main/NNST.ipynb)
+- Batch Images: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MSFTserver/AI-Colab-Notebooks/blob/main/NNST_Batch.ipynb)
+
 ## Dependencies
 Tested With:        
 * Python 3.7.7        
