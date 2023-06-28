@@ -50,7 +50,7 @@ python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_T
 python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --alpha ALPHA_VALUE
 ```
 
-(Optional Flag) Forbide augment style image with rotations. Speed up algorithm and decreases memory requirement. Generally hurts stylization slightly:  
+(Optional Flag) Disable augment style image with rotations. This optimization accelerates the algorithm and reduces memory usage, albeit resulting in a slight compromise in stylization quality:
 ```
 python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --no_flip
 ```
