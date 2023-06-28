@@ -8,10 +8,10 @@ Try Replicate web demo here [![Replicate](https://replicate.com/nkolkin13/neural
 
 ## Dependencies
 Tested With:        
-* Python 3.7.7        
-* Pytorch 1.5.0       
-* Imageio 2.8.0        
-* Numpy 1.18.1          
+* Python 3.7.16        
+* Pytorch 1.13.1       
+* Imageio 2.31.1        
+* Numpy 1.21.6
 
 ## Example Output
 Example output produced using included files with the command:
@@ -50,9 +50,9 @@ python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_T
 python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --alpha ALPHA_VALUE
 ```
 
-(Optional Flag) Augment style image with rotations. Slows down algorithm and increases memory requirement. Generally improves content preservation but hurts stylization slightly:  
+(Optional Flag) Forbide augment style image with rotations. Speed up algorithm and decreases memory requirement. Generally hurts stylization slightly:  
 ```
-python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --do_flip
+python styleTransfer.py --content_path PATH_TO_CONTENT_IMAGE --style_path PATH_TO_STYLE_IMAGE --output_path PATH_TO_OUTPUT --no_flip
 ```
 
 (Optional Flag) Cpu Mode, this takes tens of minutes even for a 512x512 output:  
